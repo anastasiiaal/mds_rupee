@@ -32,6 +32,13 @@ public class PlayerController : MonoBehaviour
         
         _anim.SetFloat("Horizontal", _movement.x);
         _anim.SetFloat("Vertical", _movement.y);
+        _anim.SetFloat("Velocity", _movement.sqrMagnitude);
+
+        if (_movement.sqrMagnitude > 0.01f)
+        {
+            _anim.SetFloat("LastHorizontal", _movement.x);
+            _anim.SetFloat("LastVertical", _movement.y);
+        }
     }
     
     /*

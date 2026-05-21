@@ -4973,6 +4973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3854d3efd3c689346b19dbfa1b1e0cb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  player: {fileID: 88148546}
 --- !u!1001 &1859194941
 PrefabInstance:
   m_ObjectHideFlags: 0

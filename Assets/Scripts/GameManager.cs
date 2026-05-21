@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     private ScoreManager _scoreManager;
     private TimeManager _timeManager;
     private RupeeManager _rupeeManager;
+    [SerializeField]
+    private PlayerController player;
 
     private void Awake()
     {
@@ -25,6 +27,7 @@ public class GameManager : MonoBehaviour
         
         _timeManager.StartTimer();
         _rupeeManager.StartSpawning();
+        player.SetCanMove(true);
 
         OnGameStarted?.Invoke();
     }
@@ -33,6 +36,7 @@ public class GameManager : MonoBehaviour
     {
         // _rupeeManager.StopSpawning();
         _rupeeManager.ResetRupees();
+        player.SetCanMove(false);
         OnGameStopped?.Invoke();
     }
 

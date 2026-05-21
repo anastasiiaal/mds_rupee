@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D _rb;
     private Vector2 _movement;
     private Animator _anim;
+    private bool _canMove = false;
     
     private void Awake()
     {
@@ -21,8 +22,14 @@ public class PlayerController : MonoBehaviour
         _anim = GetComponent<Animator>();
     }
 
+    public void SetCanMove(bool value)
+    {
+        _canMove = value;
+        if (!value) _movement = Vector2.zero;
+    }
     private void OnMove(InputValue value)
     {
+        if (!_canMove) return;
         _movement = value.Get<Vector2>();
     }
 

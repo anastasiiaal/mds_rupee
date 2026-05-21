@@ -14,14 +14,18 @@ public class RupeeManager : MonoBehaviour
 
     private readonly List<Rupee> _rupees = new();
     private Coroutine _spawnRoutine;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    public void ResetRupees()
     {
-        StartSpawning();
+        StopSpawning();
+        foreach (var rupee in _rupees)
+        {
+            if(rupee != null) Destroy(rupee.gameObject);
+        }
+        _rupees.Clear();
     }
 
-    private void StartSpawning()
+    public void StartSpawning()
     {
         _spawnRoutine = StartCoroutine(SpawnRoutine());
     }

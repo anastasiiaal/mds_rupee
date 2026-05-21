@@ -12,10 +12,20 @@ public class TimeManager : MonoBehaviour
     
     public float Remaining => _remaining;
     
-    void Start()
+    private void Awake()
     {
         _remaining = duration;
+    }
+
+    public void StartTimer()
+    {
         _running = true;
+    }
+
+    public void ResetTimer()
+    {
+        _remaining = duration;
+        _running = false;
     }
     
     void Update()

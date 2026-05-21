@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -20,5 +21,6 @@ public class UIManager : MonoBehaviour
     {
         scoreText.text = $"Score : {_scoreManager.Score}";
         timerText.text = $"{_timeManager.Remaining}";
+        timerText.text = TimeSpan.FromSeconds(_timeManager.Remaining).ToString(@"mm\:ss");
     }
 }

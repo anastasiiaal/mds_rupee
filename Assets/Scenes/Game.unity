@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 88148546}
   - component: {fileID: 88148547}
   - component: {fileID: 88148548}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -3796,7 +3796,7 @@ GameObject:
   - component: {fileID: 1676325821}
   - component: {fileID: 1676325822}
   - component: {fileID: 1676325823}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RupeeSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -3872,7 +3872,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &1676325823
 CircleCollider2D:
   m_ObjectHideFlags: 0

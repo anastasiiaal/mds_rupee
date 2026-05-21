@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private GameObject startButton;
+    [SerializeField] private TextMeshProUGUI bestScoreText;
     
     private ScoreManager _scoreManager;
     private TimeManager _timeManager;
@@ -36,6 +37,7 @@ public class UIManager : MonoBehaviour
     {
         scoreText.text = $"Score : {_scoreManager.Score}";
         timerText.text = TimeSpan.FromSeconds(_timeManager.Remaining).ToString(@"mm\:ss");
+        bestScoreText.text = $"Best : {_scoreManager.BestScore}";
     }
 
     private void HandleGameStarted()

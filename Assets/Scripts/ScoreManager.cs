@@ -27,6 +27,6 @@ public class ScoreManager : MonoBehaviour
     private void HandleRupeeCollected(Rupee rupee)
     {
         _score++;
-        Debug.Log("Score: " + _score);
+        // Debug.Log("Score: " + _score);
     }
 }

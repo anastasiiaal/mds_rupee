@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RupeeData
   color: {r: 0.21357468, g: 0.7264151, b: 0.030838363, a: 1}
   score: 1
-  pickupSound: {fileID: 0}
+  pickupSound: {fileID: 8300000, guid: c79e99ef6e144c348ac35e713cf69349, type: 3}

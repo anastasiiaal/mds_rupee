@@ -5061,6 +5061,10 @@ MonoBehaviour:
   rupeePrefab: {fileID: 4547250713782411061, guid: 933b76c4397876840a3e53f335e5ea46, type: 3}
   spawner: {fileID: 1757936305}
   spawnDelay: 1
+  rupeeDataList:
+  - {fileID: 11400000, guid: bde84708cddae8e4086615a98663ac62, type: 2}
+  - {fileID: 11400000, guid: f29b78078ac0ae449880ddaa54ba4dcf, type: 2}
+  - {fileID: 11400000, guid: 81121b251323c7941b622dc574ba1b76, type: 2}
 --- !u!114 &1794218468
 MonoBehaviour:
   m_ObjectHideFlags: 0

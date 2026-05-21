@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
 
     private void HandleRupeeCollected(Rupee rupee)
     {
-        _scoreManager.IncrementScore();
+        _scoreManager.IncrementScore(rupee.Data.score);
     }
 
     private void HandleTimeUp()

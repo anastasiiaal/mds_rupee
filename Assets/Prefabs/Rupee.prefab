@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fad8e2d4967b51488898f38f1cd946a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rupee
+  pickupSound: {fileID: 8300000, guid: c79e99ef6e144c348ac35e713cf69349, type: 3}
 --- !u!114 &3346172440622654281
 MonoBehaviour:
   m_ObjectHideFlags: 0

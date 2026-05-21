@@ -5,7 +5,8 @@ using Random = UnityEngine.Random;
 
 public class RandomVelocity : MonoBehaviour
 {
-    [SerializeField, Range(1f, 20f)] private float speed = 8f;
+    [SerializeField, Range(1f, 20f)] 
+    private float speed = 8f;
     
     private Rigidbody2D _rb;
     

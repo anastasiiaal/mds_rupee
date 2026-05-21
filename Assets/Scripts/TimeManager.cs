@@ -10,7 +10,7 @@ public class TimeManager : MonoBehaviour
     private float _remaining;
     private bool _running;
     
-    public float Remaining => Mathf.Ceil(_remaining);
+    public float Remaining => _remaining;
     
     void Start()
     {

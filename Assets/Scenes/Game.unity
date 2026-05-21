@@ -4151,6 +4151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1794218466}
   - component: {fileID: 1794218467}
+  - component: {fileID: 1794218468}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4189,6 +4190,18 @@ MonoBehaviour:
   rupeePrefab: {fileID: 4547250713782411061, guid: 933b76c4397876840a3e53f335e5ea46, type: 3}
   spawner: {fileID: 1676325819}
   spawnDelay: 1
+--- !u!114 &1794218468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794218465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b72d83ad831bcc44920af65cce64785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
 --- !u!1001 &1859194941
 PrefabInstance:
   m_ObjectHideFlags: 0

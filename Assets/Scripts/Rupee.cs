@@ -9,7 +9,7 @@ public class Rupee : MonoBehaviour
     {   
         if (!other.CompareTag("Player")) return;
         
-        Debug.Log($"Rupee collected at {transform.position}");
+        // Debug.Log($"Rupee collected at {transform.position}");
         OnCollected?.Invoke(this);
         Destroy(gameObject);
     }

@@ -31,7 +31,8 @@ public class GameManager : MonoBehaviour
 
     public void StopGame()
     {
-        _rupeeManager.StopSpawning();
+        // _rupeeManager.StopSpawning();
+        _rupeeManager.ResetRupees();
         OnGameStopped?.Invoke();
     }
 
@@ -54,6 +55,6 @@ public class GameManager : MonoBehaviour
 
     private void HandleTimeUp()
     {
-        _rupeeManager.StopSpawning();
+        StopGame();
     }
 }

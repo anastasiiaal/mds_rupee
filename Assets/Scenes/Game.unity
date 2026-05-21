@@ -3792,7 +3792,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1676325819}
-  - component: {fileID: 1676325820}
   - component: {fileID: 1676325821}
   - component: {fileID: 1676325822}
   - component: {fileID: 1676325823}
@@ -3818,21 +3817,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1676325820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676325818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22954eed983c6d64689482d2d97f0ee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RupeeSpawner
-  rupeePrefab: {fileID: 4547250713782411061, guid: 933b76c4397876840a3e53f335e5ea46, type: 3}
-  container: {fileID: 1946376730}
-  spawnDelay: 1
 --- !u!114 &1676325821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4201,6 +4185,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 052c9a23945f6b0468105f75d6328423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RupeeManager
+  container: {fileID: 1946376730}
+  rupeePrefab: {fileID: 4547250713782411061, guid: 933b76c4397876840a3e53f335e5ea46, type: 3}
+  spawner: {fileID: 1676325819}
+  spawnDelay: 1
 --- !u!1001 &1859194941
 PrefabInstance:
   m_ObjectHideFlags: 0

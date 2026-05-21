@@ -878,7 +878,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 244, y: 58}
+  m_AnchoredPosition: {x: 242, y: 56}
   m_SizeDelta: {x: 448.64062, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &268764778
@@ -901,7 +901,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Best score : 0'
+  m_text: 'Best : 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ab760b93507d06042b02e8ecf227c538, type: 2}
   m_sharedMaterial: {fileID: 3880067149351266509, guid: ab760b93507d06042b02e8ecf227c538, type: 2}
@@ -5021,6 +5021,7 @@ GameObject:
   - component: {fileID: 1794218468}
   - component: {fileID: 1794218469}
   - component: {fileID: 1794218470}
+  - component: {fileID: 1794218472}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -5099,7 +5100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd6fcfa2391b714ca37a48db4c857b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeManager
-  duration: 10
+  duration: 19
 --- !u!114 &1794218471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5113,6 +5114,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   player: {fileID: 88148546}
+--- !u!114 &1794218472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794218465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3db1e5e7f14a874286d5929fbb7f6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
 --- !u!1001 &1859194941
 PrefabInstance:
   m_ObjectHideFlags: 0
